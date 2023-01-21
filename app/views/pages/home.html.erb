@@ -1,2 +1,24 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Pages</h1>
+
+<h5>Response</h5>
+<%= @response %>
+<hr>
+
+<h5>Categories</h5>
+<%= @categories %>
+<hr>
+
+<h5>Each category</h5>
+<% @categories.each do |cat| %>
+	<p><%= cat %></p>
+<% end %>
+<hr>
+
+<h5>Cat facts</h5>
+<%= @cat_facts %>
+<hr>
+
+<h5>Each cat fact</h5>
+<% @cat_facts.each do |fact| %>
+	<p><%= fact %></p>
+<% end %>
